@@ -108,6 +108,7 @@ def main() -> None:
     ax.spines["bottom"].set_position(("data", 0))
     ax.grid(False)
     fig.tight_layout()
+    fig.savefig("reproduced_graph.png", dpi=200, bbox_inches="tight")
     plt.show()
 
 
