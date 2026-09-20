@@ -1,6 +1,6 @@
 # Slit-pore graph reproduction
 
-This repository contains a Jupyter notebook that reproduces the partition-coefficient graph from the supplied reference figure.
+This folder contains the notebook, code, and plot for the slit-pore partition-coefficient calculation.
 
 ## Files
 
@@ -23,7 +23,7 @@ Install the dependency:
 python3 -m pip install -r requirements.txt
 ```
 
-Open the notebook in Jupyter or VS Code, then run the cells from top to bottom:
+Open the notebook in VS Code, select the `Python (Graph Reproduction)` kernel, and run the code cells from top to bottom:
 
 ```bash
 jupyter notebook reproduce_graph.ipynb
