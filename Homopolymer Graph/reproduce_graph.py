@@ -1,4 +1,4 @@
-"""Reproduce the slit-pore partition-coefficient graph.
+"""Generate the Homopolymer Graph for the slit-pore partition coefficient.
 
 The series used here is the slit-pore result from the supplied text:
 
