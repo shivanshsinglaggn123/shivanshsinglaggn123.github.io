@@ -86,15 +86,15 @@ def main() -> None:
     lambda_values = [50, 3, 0.1, 0, -0.1, -3]
 
     fig, ax = plt.subplots(figsize=(8, 6))
-    for curve_number, lambda_value in enumerate(lambda_values, start=1):
+    label_positions = {50: 0.33, 3: 0.85, 0.1: 1.8, 0: 1.45, -0.1: 1.25, -3: 0.33}
+    for lambda_value in lambda_values:
         k_values = [partition_coefficient(g, lambda_value) for g in g_values]
         ax.plot(g_values, k_values, color="black", linewidth=1.4)
 
-        # Put the curve number near its visible section, like the source figure.
-        label_g = 0.33 if lambda_value in (50, -3) else 0.85
+        label_g = label_positions[lambda_value]
         label_k = partition_coefficient(label_g, lambda_value)
         if 0.05 < label_k < 3.05:
-            ax.text(label_g, label_k, str(curve_number), fontsize=10)
+            ax.text(label_g, label_k, rf"$\lambda={lambda_value:g}$", fontsize=10)
 
     ax.set_xlim(0, 2.2)
     ax.set_ylim(0, 3.2)
