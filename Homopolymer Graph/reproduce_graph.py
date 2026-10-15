@@ -65,8 +65,8 @@ def root_squared(lambda_value: float, odd_m: int) -> float:
     return alpha**2
 
 
-def partition_coefficient(g: float, lambda_value: float, terms: int = 101) -> float:
-    """Calculate K for pore-size parameter g and interaction lambda."""
+def K_homopolymer(g: float, lambda_value: float, terms: int = 101) -> float:
+    """Calculate the homopolymer partition coefficient K."""
     if lambda_value == 0:
         return 1.0
 
@@ -88,11 +88,11 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=(8, 6))
     label_positions = {50: 0.33, 3: 0.85, 0.1: 1.8, 0: 1.45, -0.1: 1.25, -3: 0.33}
     for lambda_value in lambda_values:
-        k_values = [partition_coefficient(g, lambda_value) for g in g_values]
+        k_values = [K_homopolymer(g, lambda_value) for g in g_values]
         ax.plot(g_values, k_values, color="black", linewidth=1.4)
 
         label_g = label_positions[lambda_value]
-        label_k = partition_coefficient(label_g, lambda_value)
+        label_k = K_homopolymer(label_g, lambda_value)
         if 0.05 < label_k < 3.05:
             ax.text(label_g, label_k, rf"$\lambda={lambda_value:g}$", fontsize=10)
 
