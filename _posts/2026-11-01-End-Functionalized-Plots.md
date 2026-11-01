@@ -5,8 +5,6 @@ date: 2026-11-01
 tags: [research, Python, polymers, chromatography, end-functionalized]
 ---
 
-# End-Functionalized Homopolymer Plots
-
 November 1, 2026 Entry
 
 Today, I expanded my research code from an ordinary homopolymer to linear polymers with functional end groups. I developed separate calculations for polymers with one functional end and polymers with functional groups at both ends.

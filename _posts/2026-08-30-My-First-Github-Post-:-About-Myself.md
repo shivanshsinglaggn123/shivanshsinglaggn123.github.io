@@ -1,4 +1,9 @@
-## About Me
+---
+layout: post
+title: "About Me"
+date: 2026-08-30
+tags: [about, introduction]
+---
 
 My name is Shivansh Singla, and I am 15 years old and a junior in high school at Houston High School. This is my first research project, which I will be working on with Ms. Yongmei Wang from the University of Memphis.
 

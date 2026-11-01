@@ -5,8 +5,6 @@ date: 2026-10-15
 tags: [research, Python, polymers, graph]
 ---
 
-# Homopolymer Graph
-
 October 15, 2026 Entry
 
 Today, I completed my first homopolymer graph using Python and a Jupyter notebook. This graph shows how the partition coefficient $K$ changes as the polymer size becomes larger relative to the pore size.

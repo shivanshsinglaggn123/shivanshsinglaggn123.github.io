@@ -43,3 +43,89 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+/* Research blog layout */
+.site-header {
+  border-top: 4px solid #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.site-nav .page-link {
+  color: #374151;
+}
+
+.page-content {
+  padding-top: 36px;
+}
+
+.wrapper {
+  max-width: 860px;
+}
+
+article.post,
+.page-content article,
+.home {
+  line-height: 1.72;
+}
+
+.post-header {
+  margin-bottom: 24px;
+}
+
+.post-title,
+.page-heading {
+  letter-spacing: 0;
+}
+
+.post-list {
+  margin-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 18px;
+}
+
+.post-list h3 {
+  margin-bottom: 4px;
+}
+
+.post-meta {
+  color: #6b7280;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 24px auto;
+}
+
+pre,
+code {
+  border-radius: 4px;
+}
+
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-heading {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .page-content {
+    padding-top: 24px;
+  }
+
+  .post_navi .post_navi-item {
+    padding: 0 1.2em;
+  }
+}
